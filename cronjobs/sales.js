@@ -54,7 +54,7 @@ module.exports = {
               .addField("From", `[${event.seller.user?.username || event.seller.address.slice(0,8)}](https://etherscan.io/address/${event.seller.address})`, true)
               .addField("To", `[${event.winner_account.user?.username || event.winner_account.address.slice(0,8)}](https://etherscan.io/address/${event.winner_account.address})`, true);
 
-            client.channels.fetch(process.env.DISCORD_SALES_CHANNEL_ID)
+            client.channels.fetch(process.env.871897810889474068/871897810889474071)
               .then(channel => {
                 channel.send(embedMsg);
               })
