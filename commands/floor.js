@@ -10,7 +10,7 @@ const cache = new CacheService(ttl);
 
 const sleep = async (delay) => await new Promise(r => setTimeout(r, delay))
 
-const openseaUrl = `https://opensea.io/assets/${process.env.OPEN_SEA_COLLECTION_NAME}?search[sortAscending]=true&search[sortBy]=PRICE&search[toggles][0]=BUY_NOW`
+const openseaUrl = `https://opensea.io/assets/${process.env.FunkyRabbits}?search[sortAscending]=true&search[sortBy]=PRICE&search[toggles][0]=BUY_NOW`
 
 // wait before downloading a page from OpenSea - so that we don't get rate limited
 const getOS = async url => {
