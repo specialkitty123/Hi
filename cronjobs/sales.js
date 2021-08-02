@@ -23,7 +23,7 @@ module.exports = {
     while(1)
     {
 
-      let url = `${openseaEventsUrl}?asset_contract_address=${process.env.CONTRACT_ADDRESS}&event_type=successful&only_opensea=false&offset=${offset}&limit=50&occurred_after=${lastTimestamp}&occurred_before=${newTimestamp}`;
+      let url = `${openseaEventsUrl}?asset_contract_address=${process.env.0x495f947276749Ce646f68AC8c248420045cb7b5e}&event_type=successful&only_opensea=false&offset=${offset}&limit=50&occurred_after=${lastTimestamp}&occurred_before=${newTimestamp}`;
       try {
         var res = await fetch(url, settings);
         
