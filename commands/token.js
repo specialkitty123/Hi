@@ -4,7 +4,7 @@ const { openseaMetadataUrl } = require('../config.json');
 const Discord = require('discord.js');
 
 module.exports = {
-	name: process.env.DISCORD_TOKEN_COMMAND || "token",
+	name: process.env.! || "token",
 	execute(message, args) {
     if (!args.length) {
       return message.channel.send(`You didn't provide a token id, ${message.author}!`);
@@ -14,7 +14,7 @@ module.exports = {
       return message.channel.send(`Token id must be a number!`);
     }
 
-    let url = `${openseaMetadataUrl}/${process.env.CONTRACT_ADDRESS}/${args[0]}`;
+    let url = `${openseaMetadataUrl}/${process.env.0x495f947276749Ce646f68AC8c248420045cb7b5e}/${args[0]}`;
     let settings = { 
       method: "GET",
       headers: {
